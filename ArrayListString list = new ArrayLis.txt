@@ -1,0 +1,26 @@
+ArrayList<String> list = new ArrayList<>(list.of("apple". "mango", "banana");
+//with initial capacity 
+ArrayList<String> list = new Arraylist<>(50);
+// initialization using another collection 
+List<String> list0 = Array.aslist("apple", "mango", "orange");
+ArrayList<String> list = new ArrayList<>(/*name of the another collection*/ list0);
+
+
+practice :
+List<String> initiallist = Arrays.asList("cars", "bikes" , "airplanes"); //add from existing collection.
+ArrayList<String> list1 = new ArrayList<>(initiallist);
+
+//initialization using arrays
+
+String[] array = {"a","B","c"};
+ArrayList<String> list = new ArrayList<>(Arrays.asList(array));
+//initialization using streams
+ ArrayList<String> list  = new ArrayList<>(Arrays.stream(array).collect(collectors.toList()));
+
+//initialization using double brace initialization
+ArrayList<String> list = new ArrayList<>(){{
+add("apple");
+add("mango");
+}}
+
+//initialization using collections.singletonList() and collections.nCopies(,) and then we have List.of
